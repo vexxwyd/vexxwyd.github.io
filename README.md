@@ -1,1 +1,1 @@
-# vexxwydd.github.io
+# vexxwyd.github.io
