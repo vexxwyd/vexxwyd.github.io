@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vexx.lol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-qUgBoD4+1BwzCBXJRMJTVZKpqN1MCLtH2pZoXsUkGJKxu9I2HmGq3pCQzimjPV/6DE9l0HRcdI38dlJDoAGfKw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Set background color to black */
+            color: red; /* Set text color to red */
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 0, 0, 0.5); /* Transparent red box */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center; /* Center align the content */
+        }
+        h1 {
+            text-align: center;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: white; /* Set link color to white */
+            font-weight: bold; /* Make link text bold */
+        }
+        a:hover {
+            color: #ff5555; /* Lighter red on hover */
+        }
+        .Profile-img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%; /* Ensure the image is responsive */
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .link-icon {
+            margin-left: 5px; /* Add some spacing between the text and the icon */
+        }
+        .btn {
+            background-color: red; /* Set button background color */
+            color: white; /* Set button text color */
+            padding: 10px 20px; /* Add padding */
+            border: none; /* Remove border */
+            border-radius: 5px; /* Add border radius */
+            cursor: pointer; /* Add cursor pointer */
+            transition: background-color 0.3s ease; /* Add smooth transition */
+        }
+        .btn:hover {
+            background-color: #ff5555; /* Change background color on hover */
+        }
+        .audio-controls {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <button class="btn" onclick="navigateToPage()">Hall Of Autism</button>
+    <h1>vexx.lol</h1>
+    <img src="c:\Users\vexxwtm\Downloads\21 savage.jpg" alt="Profile Picture" class="Profile-img">
+    <h1>im a 21 savage fan!</h1>
+    <ul>
+        <li><a href="https://guns.lol/vexxqt"><strong>guns.lol</strong></a></li>
+        <li><a href="https://github.com/vexxwyd"><strong>GitHub <i class="c:\Users\vexxwtm\Downloads\githunnn.png"></i></strong></a></li>
+    </ul>
+
+    <!-- Audio Player -->
+    <div class="audio-controls">
+        <button id="playButton" class="btn" onclick="playAudio()">Play music</button>
+        <button id="pauseButton" class="btn" onclick="pauseAudio()" style="display: none;">Pause music</button>
+    </div>
+    <audio id="audioPlayer" style="display: none;">
+        <source src="c:\Users\vexxwtm\Downloads\Untitled video - Made with Clipchamp (1).mp4" type="audio/mp4">
+        Your browser does not support the audio element.
+    </audio>
+</div>
+
+<script>
+    function navigateToPage() {
+        window.location.href = "autism.html"; // Redirect to main.html
+    }
+
+    var audioPlayer = document.getElementById('audioPlayer');
+    var playButton = document.getElementById('playButton');
+    var pauseButton = document.getElementById('pauseButton');
+
+    function playAudio() {
+        audioPlayer.play();
+        playButton.style.display = 'none';
+        pauseButton.style.display = 'inline-block';
+    }
+
+    function pauseAudio() {
+        audioPlayer.pause();
+        pauseButton.style.display = 'none';
+        playButton.style.display = 'inline-block';
+    }
+</script>
+
+</body>
+</html>
